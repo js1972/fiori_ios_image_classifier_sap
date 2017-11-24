@@ -165,6 +165,7 @@ class ImageClassifierTVC: UITableViewController, UIImagePickerControllerDelegate
             "Content-Type": "multipart/form-data; boundary=\(boundary)"
         ]
         
+        //Can replace imageclassifier with prodimgclassifier in the url below. The prod one supposedly detects more business-like type objects?!?
         var request = URLRequest(url: URL(string: "https://sandbox.api.sap.com/ml/imageclassifier/inference_sync")!,
                                  cachePolicy: .useProtocolCachePolicy,
                                  timeoutInterval: 10.0)
